@@ -1,7 +1,7 @@
 class Solution {
     public int[] runningSum(int[] nums) {
         int[] sum=new int[nums.length];
-        int i,j,k=0;
+        int i,j;
         for(i=0;i<nums.length;i++)
         {
             int add=0;
@@ -9,8 +9,8 @@ class Solution {
             {
                 add+=nums[j];
             }
-            sum[k]=add;
-            k++;
+            sum[i]=add;
+            
         }
         return sum;
     }
